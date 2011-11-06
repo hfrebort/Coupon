@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD component 1.0//EN" "http://www.joomla.org/xml/dtd/1.5/component-install.dtd"-->
+<install type="component" version="1.5.0">
+    <name>Coupon</name>
+    <!-- The following elements are optional and free of formatting conttraints -->
+    <creationDate>2011-10-22</creationDate>
+    <author>Frebort</author>
+    <authorEmail>office@frebort.at</authorEmail>
+    <authorUrl>http://www.frebort.at</authorUrl>
+    <copyright>Copyright Info</copyright>
+    <license>License Info</license>
+    <!--  The version string is recorded in the components table -->
+    <version>1.1</version>
+    <!-- The description is optional and defaults to the name -->
+    <description>A very simple coupon order component.</description>
+
+    <!-- Site Main File Copy Section -->
+    <files folder="site">
+        <filename>index.html</filename>
+        <filename>controller.php</filename>
+        <filename>coupon.image.php</filename>
+        <filename>coupon.preview.php</filename>
+        <filename>coupon.model.php</filename>
+        <filename>coupon.php</filename>
+        <filename>font.ttf</filename>
+        <filename>views/coupon/view.php</filename>
+        <filename>views/coupon/index.html</filename>
+        <filename>views/coupon/tmpl/default.php</filename>
+        <filename>views/coupon/tmpl/index.html</filename>
+        <filename>phpmailer/class.phpmailer.php</filename>
+        <filename>phpmailer/class.pop3.php</filename>
+        <filename>phpmailer/class.smtp.php</filename>
+        <filename>phpmailer/language/phpmailer.lang-de.php</filename>
+        <filename>js/jquery-1.6.4.js</filename>
+        <filename>js/jquery.validate.js</filename>
+        <filename>images/GutscheinKuchlerhausV2Allgemein.png</filename>
+        <filename>images/GutscheinKuchlerhausV2Glasblasen.png</filename>
+        <filename>images/GutscheinKuchlerhausV2Malkurs.png</filename>
+        <filename>images/GutscheinKuchlerhausHQV2Allgemein.png</filename>
+        <filename>images/GutscheinKuchlerhausHQV2Glasblasen.png</filename>
+        <filename>images/GutscheinKuchlerhausHQV2Malkurs.png</filename>
+        <filename>css/coupon.css</filename>
+        <folder>images/tmp</folder>
+    </files>
+
+    <install>
+        <sql>
+            <file charset="utf8" driver="mysql">installation/install.sql</file>
+        </sql>
+    </install>
+    <uninstall>
+        <sql>
+            <file charset="utf8" driver="mysql">installation/uninstall.sql</file>
+        </sql>
+    </uninstall>
+
+    <administration>
+        <!-- Administration Menu Section -->
+        <menu>Coupon</menu>
+
+        <!-- Administration Main File Copy Section -->
+        <!-- Note the folder attribute: This attribute describes the folder
+                to copy FROM in the package to install therefore files copied
+                in this section are copied from /admin/ in the package -->
+        <files folder="admin">
+            <!-- Site Main File Copy Section -->
+            <filename>config.xml</filename>
+            <filename>coupon.php</filename>
+            <filename>controller.php</filename>
+            <filename>index.html</filename>
+            <filename>views/coupon/view.php</filename>
+            <filename>views/coupon/index.html</filename>
+            <filename>views/coupon/tmpl/default.php</filename>
+            <filename>views/coupon/tmpl/index.html</filename>
+            <filename>models/coupon.php</filename>
+            <filename>models/index.html</filename>
+            <filename>tables/coupon.class.php</filename>
+            <filename>tables/coupon.table.php</filename>
+            <filename>installation/index.html</filename>
+            <filename>installation/install.sql</filename>
+            <filename>installation/uninstall.sql</filename>
+        </files>
+        <!-- Administration Language File Copy Section -->
+        <languages folder="admin/language">
+            <language tag="de-AT">de-DE.com_coupon.ini</language>
+            <language tag="de-DE">de-DE.com_coupon.ini</language>
+        </languages>
+    </administration>
+
+</install>

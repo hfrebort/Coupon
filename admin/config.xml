@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<root>
+    <params>
+        <url addpath="/administrator/components/com_coupon/elements">
+            <param name="cid" type="JELEMENT_TYPE_NAME" scope="com_coupon" default="0" label="LABEL" description="DESCRIPTION" />
+        </url>
+        <param name="email_from" type="text"
+               default="shop@kuchlerhaus.at"
+               label="CMCPL_EMAIL_FROM"
+               description="CMCPD_EMAIL_FROM" />
+        <param name="email_from_name" type="text"
+               default="Shopsystem Kuchlerhaus"
+               label="CMCPL_EMAIL_FROM_NAME"
+               description="CMCPD_EMAIL_FROM_NAME" />
+        <param name="order_process" type="textarea"
+               cols="60" rows="10"
+               default=""
+               label="CMCPL_ORDER_PROCESS"
+               description="CMCPD_ORDER_PROCESS" />
+        <param name="account_information" type="textarea"
+               cols="60" rows="10"
+               default=""
+               label="CMCPL_ACCOUNT_INFORMATION"
+               description="CMCPD_ACCOUNT_INFORMATION" />
+        <param name="agb" type="textarea"
+               cols="60" rows="6"
+               default=""
+               label="CMCPL_AGB"
+               description="CMCPD_AGB" />
+        <param name="newsletter" type="textarea"
+               cols="60" rows="6"
+               default=""
+               label="CMCPL_NEWSLETTER"
+               description="CMCPD_NEWSLETTER" />
+        <param name="subject_post" type="text" size="60"
+               default='Gutscheinbestellung Kuchlerhaus, Postversand: '
+               label="CMCPL_SUBJECT_POST"
+               description="CMCPD_SUBJECT_POST" />
+        <param name="html_message_post" type="textarea"
+               cols="60" rows="12"
+               default=""
+               label="CMCPL_HTML_MESSAGE_POST"
+               description="CMCPD_HTML_MESSAGE_POST" />
+        <param name="subject_email" type="text" size="60"
+               default="Gutscheinbestellung Kuchlerhaus, Bestellnummer: "
+               label="CMCPL_SUBJECT_EMAIL"
+               description="CMCPD_SUBJECT_EMAIL" />
+        <param name="html_message_email" type="textarea"
+               cols="60" rows="12"
+               default=""
+               label="CMCPL_HTML_MESSAGE_EMAIL"
+               description="CMCPD_HTML_MESSAGE_EMAIL" />
+        <param name="subject_cancel" type="text" size="60"
+               default="STORNO Gutscheinbestellung Kuchlerhaus, Bestellnummer: "
+               label="CMCPL_SUBJECT_CANCEL"
+               description="CMCPD_SUBJECT_CANCEL" />
+        <param name="html_message_cancel" type="textarea"
+               cols="60" rows="12"
+               default="Stornobestätigung"
+               label="CMCPL_HTML_MESSAGE_CANCEL"
+               description="CMCPD_HTML_MESSAGE_CANCEL" />
+        <param name="coupon_debug" type="radio"
+               default="0"
+               label="CMCPL_DEBUG"
+               description="CMCPD_DEBUG">
+                   <option value="1">Yes</option>
+                   <option value="0">No</option>
+        </param>
+    </params>
+</root>
